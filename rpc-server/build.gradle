@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.develcarl'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'log4j:log4j:1.2.17'
+    compile 'de.javakaffee:kryo-serializers:0.38'
+    compile 'io.netty:netty-all:4.1.25.Final'
+    compile 'com.esotericsoftware:reflectasm:1.11.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
